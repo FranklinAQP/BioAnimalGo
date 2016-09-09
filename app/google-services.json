@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "224453746022",
+    "firebase_url": "https://bioanimalgo.firebaseio.com",
+    "project_id": "bioanimalgo",
+    "storage_bucket": "bioanimalgo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224453746022:android:f0d9bccb7e9a125c",
+        "android_client_info": {
+          "package_name": "com.app.mistisoft.bioanimalgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224453746022-igi41v57knqigo9c6i8gg9iuoag7d7sc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ4BrKCY9dYd7YOR23qNMu3AhUD1gwJ1E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Bio Animal Go</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="cancel_login">Se canceló la operación</string>
+    <string name="error_login">Ocurrió un error al ingresar</string>
+    <string name="logout">Cerrar sesión</string>
+
+
+    <string name="facebook_app_id">236459550088405</string>
+    <string name="welcome" >Bienvenidos </string>
+
+    <string name="firebase_error_login">Error de conexión</string>
+</resources>
