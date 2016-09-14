@@ -8,7 +8,7 @@
 
 
     <string name="facebook_app_id">236459550088405</string>
-    <string name="welcome" >Bienvenidos </string>
+    <string name="welcome">Bienvenidos </string>
 
     <string name="firebase_error_login">Error de conexión</string>
 </resources>
