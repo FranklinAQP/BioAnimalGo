@@ -4,11 +4,14 @@ import android.content.Intent;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ProgressBar;
 
 import com.app.mistisoft.bioanimalgo.R;
 
 public class SplashActivity extends AppCompatActivity {
+
+    private static final String TAG = "Splash Activity";
 
     private ProgressBar progressBar;
     private static final int mtime_s = 3;
@@ -17,6 +20,7 @@ public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "iniciando APP");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
@@ -26,6 +30,7 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void init_animation() {
+        Log.d(TAG, "ejecutando init_animation");
         new CountDownTimer(mtime_ms, mdelay) {
             @Override
             public void onTick(long l) {
@@ -34,7 +39,8 @@ public class SplashActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                Intent nintent = new Intent(SplashActivity.this, MainActivity.class);
+                Log.d(TAG, "Finalizando activity");
+                Intent nintent = new Intent(SplashActivity.this, PagerActivity.class);
                 //nintent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(nintent);
                 finish();
