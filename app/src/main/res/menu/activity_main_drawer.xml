@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 Samuel Wall
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_camera_24"
+            android:title="Realidad Aumentada" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_gallery_24"
+            android:title="Galeria" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_slideshow_24"
+            android:title="Videos" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_manage_24"
+            android:title="Ajustes" />
+        <item
+            android:id="@+id/search_especie"
+            android:icon="@drawable/ic_search_black_24"
+            android:title="Buscar por nombre" />
+        <item
+            android:id="@+id/search_map"
+            android:icon="@drawable/ic_map_black_24"
+            android:title="Buscar en el mapa" />
+    </group>
+
+    <item android:title="Comunicar">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_24"
+                android:title="Compartir" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_send_24"
+                android:title="Enviar" />
+        </menu>
+    </item>
+
+</menu>

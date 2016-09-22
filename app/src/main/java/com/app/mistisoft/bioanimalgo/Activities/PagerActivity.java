@@ -53,11 +53,11 @@ public class PagerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_pager);
 
-        /*if (Utils.readSharedSetting(this, Utils.PREF_USER_FIRST_TIME, Utils.TRUE).equals(Utils.FALSE)) {
+        if (Utils.readSharedSetting(this, Utils.PREF_USER_FIRST_TIME, Utils.TRUE).equals(Utils.FALSE)) {
             Intent homeIntent = new Intent(PagerActivity.this, MainActivity.class);
             startActivity(homeIntent);
             finish();
-        }*/
+        }
 
         /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             requestWindowFeature(Window.FEATURE_NO_TITLE);
