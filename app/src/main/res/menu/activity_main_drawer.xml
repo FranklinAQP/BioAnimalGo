@@ -33,7 +33,7 @@
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_manage_24"
-            android:title="Ajustes" />
+            android:title="@string/title_activity_setting" />
         <item
             android:id="@+id/search_especie"
             android:icon="@drawable/ic_search_black_24"

@@ -9,6 +9,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.app.mistisoft.bioanimalgo.R;
+import com.app.mistisoft.bioanimalgo.SettingActivity;
 import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
 import com.google.firebase.auth.FirebaseAuth;
@@ -127,27 +129,47 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (id == R.id.nav_camera)
         {
+            Log.i("NavigationDrawer","estoy en camara de realidad aumentada");
             // Handle the camera action
         }
         else if (id == R.id.nav_gallery)
         {
-
+            Log.i("NavigationDrawer","estoy en galeria");
         }
         else if (id == R.id.nav_slideshow)
         {
-
+            Log.i("NavigationDrawer","estoy en videos");
         }
         else if (id == R.id.nav_manage)
         {
+            Log.i("NavigationDrawer","estoy en ajustes modificados");
+            Intent nintent = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(nintent);
+            //finish();
+        }
+        else if (id == R.id.search_especie)
+        {
+            Log.i("NavigationDrawer","estoy en busqueda por especie");
+            Intent nintent = new Intent(MainActivity.this, SettingActivity.class);
+            startActivity(nintent);
+            //finish();
+
+        }
+        else if (id == R.id.search_map)
+        {
+            Log.i("NavigationDrawer","estoy en busqueda en el mapa");
+            Intent nintent = new Intent(MainActivity.this,SearchMapsActivity.class);
+            startActivity(nintent);
+            //finish();
 
         }
         else if (id == R.id.nav_share)
         {
-
+            Log.i("NavigationDrawer","estoy en camara de compartir");
         }
         else if (id == R.id.nav_send)
         {
-
+            Log.i("NavigationDrawer","estoy en enviar");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

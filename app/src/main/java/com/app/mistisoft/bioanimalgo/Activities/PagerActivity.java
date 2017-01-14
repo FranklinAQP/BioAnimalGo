@@ -2,7 +2,6 @@ package com.app.mistisoft.bioanimalgo.Activities;
 
 import android.animation.ArgbEvaluator;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Build;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.content.ContextCompat;
@@ -13,11 +12,13 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatDelegate;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -25,7 +26,7 @@ import android.widget.TextView;
 
 import com.app.mistisoft.bioanimalgo.R;
 import com.app.mistisoft.bioanimalgo.utils.Utils;
-import com.google.firebase.analytics.FirebaseAnalytics;
+//import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class PagerActivity extends AppCompatActivity {
 
@@ -59,13 +60,13 @@ public class PagerActivity extends AppCompatActivity {
             finish();
         }
 
-        /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             requestWindowFeature(Window.FEATURE_NO_TITLE);
             getWindow().getDecorView().setSystemUiVisibility(
                     View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                             | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
             getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.black_trans80));
-        }*/
+        }
 
         setContentView(R.layout.activity_pager);
 
@@ -84,13 +85,15 @@ public class PagerActivity extends AppCompatActivity {
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         mNextBtn = (ImageButton) findViewById(R.id.intro_btn_next);
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+/*
         if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP){
             Log.d(TAG, "VERSION_CODES.LOLLIPOP menor");
-            mNextBtn.setImageDrawable(
-                    Utils.tintMyDrawable(ContextCompat.getDrawable(this, R.drawable.ic_chevrom_right_vector), Color.WHITE)
-            );
+            mNextBtn.setImageResource(R.drawable.ic_chevrom_right_vector);
+            //mNextBtn.setImageDrawable(Utils.tintMyDrawable(ContextCompat.getDrawable(this, R.drawable.ic_chevrom_right_vector), Color.WHITE) );
         }
-
+        //iv.setImageResource(R.drawable.ic_search);
+*/
         Log.d(TAG, "cargando variables");
         mSkipBtn = (Button) findViewById(R.id.intro_btn_skip);
         mFinishBtn = (Button) findViewById(R.id.intro_btn_finish);

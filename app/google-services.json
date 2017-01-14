@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "224453746022-gneafuva54seqnub3j5qdpcvqcsg8tl4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.mistisoft.bioanimalgo",
+            "certificate_hash": "C18D518381D744FF97A7ED7B65A1FE2A59C4F785"
+          }
+        },
+        {
           "client_id": "224453746022-igi41v57knqigo9c6i8gg9iuoag7d7sc.apps.googleusercontent.com",
           "client_type": 3
         }
